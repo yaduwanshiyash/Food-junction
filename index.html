@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Pizza Shop</title>
+    <!-- Font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- header section starts  -->
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo"> Pizza. </a>
+            <nav id="navbar" class="navbar">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#order">order</a>
+                <a href="#faq">faq</a>
+            </nav>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="order-btn" class="fas fa-box"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+            </div>
+        </section>
+    </header>
+    <!-- header section End  -->
+    <!-- user account start  -->
+    <div class="user-account">
+        <section>
+            <div id="close-account"><span>close</span></div>
+            <div class="user">
+                <p><span>you are not logged in now ! </span></p>
+            </div>
+            <div class="display-orders">
+                <p>Pizza-1 <span>( $3/ - x2)</span></p>
+                <p>Pizza-03 <span>( $5/ - x2)</span></p>
+                <p>Pizza-2 <span>( $4/ - x2)</span></p>
+                <p>Pizza-1 <span>( $3/ - x2)</span></p>
+            </div>
+            <div class="flex">
+                <form action="" class="login-form" method="post">
+                    <h3>login now</h3>
+                    <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+                    <input type="password" name="password" required class="box" placeholder="enter your password"
+                        maxlength="20">
+                    <input type="submit" name="login" class="btn" value="login now ">
+                </form>
+                <form action="" method="post">
+                    <h3>Register now</h3>
+                    <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+                    <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="20">
+                    <input type="password" name="password" required class="box" placeholder="enter your password"
+                        maxlength="20">
+                    <input type="password" name="password" required class="box" placeholder="conform password"
+                        maxlength="20">
+                    <input type="submit" name="register" class="btn" value="register now ">
+                </form>
+            </div>
+        </section>
+    </div>
+    <!-- user account end  -->
+    <!-- My-Orders account start  -->
+    <div class="my-orders">
+        <section>
+            <div id="close-account">close </div>
+            <h3 class="title">my orders</h3>
+            <div class="box">
+                <p> placed on <span> 06/01/2024 </span></p>
+                <p> name<span> Sakshi Maheshwari </span></p>
+                <p>number : <span>+91 12345 69874 </span></p>
+                <p> address : <span> flat no. 123, Uttar Pradesh Aligarh 202202</span></p>
+                <p> payment method : <span> cash on delivery </span></p>
+                <p> your orders : <span> Pizza-1 $3/ - x2 , Pizza-03 $5/ - x2 </span></p>
+                <p> total price : <span> $11/-</span></p>
+                <p> payment status : <span class="red"> pending </span></p>
+            </div>
+            <div class="box">
+                <p> placed on <span> 06/01/2024 </span></p>
+                <p> name<span> Sakshi Maheshwari </span></p>
+                <p>number : <span>+91 12345 69874 </span></p>
+                <p> address : <span> flat no. 123, Uttar Pradesh Aligarh 202202</span></p>
+                <p> payment method : <span> cash on delivery </span></p>
+                <p> your orders : <span> Pizza-1 $3/ - x2 , Pizza-03 $5/ - x2 </span></p>
+                <p> total price : <span> $11/-</span></p>
+                <p> payment status : <span class="red"> pending </span></p>
+            </div>
+            <div class="box">
+                <p> placed on <span> 06/01/2024 </span></p>
+                <p> name<span> Sakshi Maheshwari </span></p>
+                <p>number : <span>+91 12345 69874 </span></p>
+                <p> address : <span> flat no. 123, Uttar Pradesh Aligarh 202202</span></p>
+                <p> payment method : <span> cash on delivery </span></p>
+                <p> your orders : <span> Pizza-1 $3/ - x2 , Pizza-03 $5/ - x2 </span></p>
+                <p> total price : <span> $11/-</span></p>
+                <p> payment status : <span class="red"> pending </span></p>
+            </div>
+        </section>
+    </div>
+    <!-- My-Orders account end  -->
+    <!-- Shopping Cart start  -->
+    <div class="shopping-cart">
+        <section>
+            <div id="close-cart"><span>close</span></div>
+            <div class="box">
+                <a href="" class="fas fa-times"></a>
+                <img src="https://img.freepik.com/premium-photo/isolated-pizza-with-mushrooms-olives_219193-8149.jpg"
+                    alt="">
+                <div class="content">
+                    <p>Pizza-1 <span>( $3/ - x2)</span></p>
+                    <form action="" method="post">
+                        <input type="number" name="qty" class="qty" min="1" value="2" max="100">
+                        <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="box">
+                <a href="" class="fas fa-times"></a>
+                <img src="images/pizza2.png" alt="">
+                <div class="content">
+                    <p>Pizza-1 <span>( $3/ - x2)</span></p>
+                    <form action="" method="post">
+                        <input type="number" name="qty" class="qty" min="1" value="2" max="100">
+                        <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="box">
+                <a href="" class="fas fa-times"></a>
+                <img src="images/pizza3.png" alt="">
+
+                <div class="content">
+                    <p>Pizza-1 <span>( $3/ - x2)</span></p>
+                    <form action="" method="post">
+                        <input type="number" name="qty" class="qty" min="1" value="2" max="100">
+                        <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="box">
+                <a href="" class="fas fa-times"></a>
+                <img src="images/pizza4.png" alt="">
+                <div class="content">
+                    <p>Pizza-1 <span>( $3/ - x2)</span></p>
+                    <form action="" method="post">
+                        <input type="number" name="qty" class="qty" min="1" value="2" max="100">
+                        <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                    </form>
+                </div>
+
+
+            </div>
+            <button class="btn">Order Now</button>
+        </section>
+    </div>
+    <!-- Shopping Cart end  -->
+    <!-- home section start  -->
+    <div class="home-bg">
+        <section class="home">
+            <div class="slide-container">
+                <div class="slide active">
+                    <div class="image" data-aos="fade-right">
+                        <img src="images/pizza1.png" alt="">
+                    </div>
+                    <div class="content" data-aos="fade-left">
+                        <h3>Homemade pepperoni Pizza </h3>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="image" data-aos="fade-right">
+                        <img src="images/pizza2.png" alt="">
+                    </div>
+                    <div class="content" data-aos="fade-left">
+                        <h3> Mushrooms pepperoni Pizza </h3>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="image" data-aos="fade-right">
+                        <img src="images/pizza3.png" alt="">
+                    </div>
+                    <div class="content" data-aos="fade-left">
+                        <h3> Onion and Tomato Pizza </h3>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- home section end -->
+    <!-- About section start  -->
+    <div class="about-bg">
+        <section class="about" id="about">
+            <h1 class="heading aos-init aos-animate" data-aos="fade-up">about us</h1>
+            <div class="box-container">
+                <div class="box" data-aos="fade-right">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>made with love</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eveniet assumenda repellat
+                        consectetur! Eum quos impedit modi sapiente expedita qui.</p>
+                    <a href="#menu" class="btn"> Order Now</a>
+                </div>
+                <div class="box" data-aos="fade-up">
+                    <i class="fas fa-truck"></i>
+                    <h3>30 Minutes delivery</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eveniet assumenda repellat
+                        consectetur! Eum quos impedit modi sapiente expedita qui.</p>
+                    <a href="#menu" class="btn"> delivery</a>
+                </div>
+                <div class="box" data-aos="fade-left">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>share with friends</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eveniet assumenda repellat
+                        consectetur! Eum quos impedit modi sapiente expedita qui.</p>
+                    <a href="#menu" class="btn">share </a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!-- About section end -->
+    <!-- Menu section starts  -->
+    <section id="menu" class="menu">
+        <h1 class="heading" data-aos="fade-up">Our menu</h1>
+        <div class="box-container">
+            <div class="box" data-aos="fade-up">
+                <div class="price">$ <span>2</span>/- </div>
+                <img src="images/pizza1.png" height="100" width="100" alt="">
+                <div class="name">pizza 1</div>
+                <form action="">
+                    <input type="number" name="qty" min="1" max="10" value="2" class="qty">
+                    <input type="submit" name="add_to_cart" value="add_to_cart" class="btn">
+                </form>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="price">$ <span>2</span>/- </div>
+                <img src="images/pizza3.png" height="100" width="100" alt="">
+                <div class="name">pizza 1</div>
+                <form action="">
+                    <input type="number" name="qty" min="1" max="10" value="2" class="qty">
+                    <input type="submit" name="add_to_cart" value="add_to_cart" class="btn">
+                </form>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="price">$ <span>2</span>/- </div>
+                <img src="images/pizza2.png" height="100" width="100" alt="">
+                <div class="name">pizza 1</div>
+                <form action="">
+                    <input type="number" name="qty" min="1" max="10" value="2" class="qty">
+                    <input type="submit" name="add_to_cart" value="add_to_cart" class="btn">
+                </form>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="price">$ <span>2</span>/- </div>
+                <img src="images/pizza4.png" height="100" width="100" alt="">
+                <div class="name">pizza 1</div>
+                <form action="">
+                    <input type="number" name="qty" min="1" max="10" value="2" class="qty">
+                    <input type="submit" name="add_to_cart" value="add_to_cart" class="btn">
+                </form>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="price">$ <span>2</span>/- </div>
+                <img src="images/pizza1.png" height="100" width="100" alt="">
+                <div class="name">pizza 1</div>
+                <form action="">
+                    <input type="number" name="qty" min="1" max="10" value="2" class="qty">
+                    <input type="submit" name="add_to_cart" value="add_to_cart" class="btn">
+                </form>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="price">$ <span>2</span>/- </div>
+                <img src="images/pizza1.png" height="100" width="100" alt="">
+                <div class="name">pizza 1</div>
+                <form action="">
+                    <input type="number" name="qty" min="1" max="10" value="2" class="qty">
+                    <input type="submit" name="add_to_cart" value="add_to_cart" class="btn">
+                </form>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="price">$ <span>2</span>/- </div>
+                <img src="images/pizza2.png" height="100" width="100" alt="">
+                <div class="name">pizza 1</div>
+                <form action="">
+                    <input type="number" name="qty" min="1" max="10" value="2" class="qty">
+                    <input type="submit" name="add_to_cart" value="add_to_cart" class="btn">
+                </form>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="price">$ <span>2</span>/- </div>
+                <img src="images/pizza3.png" height="100" width="100" alt="">
+                <div class="name">pizza 1</div>
+                <form action="">
+                    <input type="number" name="qty" min="1" max="10" value="2" class="qty">
+                    <input type="submit" name="add_to_cart" value="add_to_cart" class="btn">
+                </form>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <div class="price">$ <span>2</span>/- </div>
+                <img src="images/pizza4.png" height="100" width="100" alt="">
+                <div class="name">pizza 1</div>
+                <form action="">
+                    <input type="number" name="qty" min="1" max="10" value="2" class="qty">
+                    <input type="submit" name="add_to_cart" value="add_to_cart" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Menu section end  -->
+    <!-- order section start  -->
+    <section class="order" id="order" data-aos="fade-up">
+        <h1 class="heading">order now </h1>
+        <form action="">
+            <div class="display-orders">
+                <p>Pizza-1 <span>( $3/ - x2)</span></p>
+                <p>Pizza-03 <span>( $5/ - x2)</span></p>
+                <p>Pizza-2 <span>( $4/ - x2)</span></p>
+                <p>Pizza-1 <span>( $3/ - x2)</span></p>
+            </div>
+            <div class="flex">
+                <div class="inputBox">
+                    <span>your name : </span>
+                    <input type="text" class="box" required placeholder="enter your name" maxlength="20">
+                </div>
+                <div class="inputBox">
+                    <span>your number : </span>
+                    <input type="number" class="box" required placeholder="enter your number" maxlength="20">
+                </div>
+                <div class="inputBox">
+                    <span>payment method</span>
+                    <select name="" id="" class="box">
+                        <option value="cash on delivery">cash on delivery</option>
+                        <option value="credit card">credit card</option>
+                        <option value="paytm">paytm</option>
+                        <option value="paypal">paypal</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>address line 01 : </span>
+                    <input type="text" class="box" placeholder="e. g. -flat no. ">
+                </div>
+                <div class="inputBox">
+                    <span>address line 02 : </span>
+                    <input type="text" class="box" placeholder="e. g. -street name ">
+                </div>
+                <div class="inputBox">
+                    <span>Pincode : </span>
+                    <input type="number" class="box" placeholder="enter your Pincode " min="0" max="6">
+                </div>
+            </div>
+            <input type="submit" value="order now" class="btn">
+        </form>
+    </section>
+    <!-- order section end -->
+    <!-- faq section start  -->
+    <section class="faq" id="faq">
+        <h1 class="heading" data-aos="fade-up">faq</h1>
+        <div class="accordion-container">
+            <div class="accordion active" data-aos="fade-right">
+                <div class="accordion-heading">
+                    <span>how does it work? </span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minima non ipsam quas voluptatem
+                    optio debitis aspernatur amet hic asperiores?
+                </p>
+            </div>
+            <div class="accordion" data-aos="fade-left">
+                <div class="accordion-heading">
+                    <span>how does it work? </span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minima non ipsam quas voluptatem
+                    optio debitis aspernatur amet hic asperiores?
+                </p>
+            </div>
+            <div class="accordion" data-aos="fade-right">
+                <div class="accordion-heading">
+                    <span>how does it work? </span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minima non ipsam quas voluptatem
+                    optio debitis aspernatur amet hic asperiores?
+                </p>
+            </div>
+            <div class="accordion" data-aos="fade-left">
+                <div class="accordion-heading">
+                    <span>how does it work? </span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minima non ipsam quas voluptatem
+                    optio debitis aspernatur amet hic asperiores?
+                </p>
+            </div>
+            <div class="accordion" data-aos="fade-right">
+                <div class="accordion-heading">
+                    <span>how does it work? </span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minima non ipsam quas voluptatem
+                    optio debitis aspernatur amet hic asperiores?
+                </p>
+            </div>
+            <div class="accordion" data-aos="fade-left">
+                <div class="accordion-heading">
+                    <span>how does it work? </span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minima non ipsam quas voluptatem
+                    optio debitis aspernatur amet hic asperiores?
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- faq section end  -->
+    <!-- footer section start  -->
+    <section class="footer" data-aos="fade-up">
+        <div class="box-container">
+            <div class="footer-content">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <p>+9090909090</p>
+            </div>
+
+            <div class="footer-content">
+                <i class="fas fa-envelope"></i>
+                <h3>email address</h3>
+                <p>semo@text.gmail</p>
+            </div>
+            <div class="footer-content">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>your address</h3>
+                <p>Uttar Pradesh</p>
+            </div>
+            <div class="footer-content">
+                <i class="fas fa-clock"></i>
+                <h3>opening hours</h3>
+                <p>00:09AM to 10:00 PM</p>
+            </div>
+
+        </div>
+        <div class="credits">
+            &copy; copyright @ 2024 by <span> Sakshi Maheshwari</span> | all rights reserved!
+        </div>
+    </section>
+    <!-- footer section end  -->
+    <!-- custom JS file link  -->
+    <script src="script.js">    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // AOS Animation
+        AOS.init({
+            disable: 'mobile',
+            duration: 1200,
+        })
+
+    </script>
+</body>
+
+</html>
